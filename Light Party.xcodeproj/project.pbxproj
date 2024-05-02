@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		E9CF72352BE3BFD400C378DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF72342BE3BFD400C378DF /* AppDelegate.swift */; };
 		E9CF72372BE3BFD400C378DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF72362BE3BFD400C378DF /* SceneDelegate.swift */; };
-		E9CF72392BE3BFD400C378DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF72382BE3BFD400C378DF /* ViewController.swift */; };
-		E9CF723C2BE3BFD400C378DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF723A2BE3BFD400C378DF /* Main.storyboard */; };
 		E9CF723E2BE3BFD700C378DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CF723D2BE3BFD700C378DF /* Assets.xcassets */; };
 		E9CF72412BE3BFD700C378DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CF723F2BE3BFD700C378DF /* LaunchScreen.storyboard */; };
+		E9CF724A2BE3C0A000C378DF /* FlashLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF72482BE3C0A000C378DF /* FlashLightViewController.swift */; };
+		E9CF724B2BE3C0A000C378DF /* FlashLightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CF72492BE3C0A000C378DF /* FlashLightViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9CF72312BE3BFD400C378DF /* Light Party.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Party.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CF72342BE3BFD400C378DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CF72362BE3BFD400C378DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9CF72382BE3BFD400C378DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9CF723B2BE3BFD400C378DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9CF723D2BE3BFD700C378DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9CF72402BE3BFD700C378DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CF72422BE3BFD700C378DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CF72482BE3C0A000C378DF /* FlashLightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashLightViewController.swift; sourceTree = "<group>"; };
+		E9CF72492BE3C0A000C378DF /* FlashLightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashLightViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		E9CF72332BE3BFD400C378DF /* Light Party */ = {
 			isa = PBXGroup;
 			children = (
-				E9CF72342BE3BFD400C378DF /* AppDelegate.swift */,
-				E9CF72362BE3BFD400C378DF /* SceneDelegate.swift */,
-				E9CF72382BE3BFD400C378DF /* ViewController.swift */,
-				E9CF723A2BE3BFD400C378DF /* Main.storyboard */,
-				E9CF723D2BE3BFD700C378DF /* Assets.xcassets */,
-				E9CF723F2BE3BFD700C378DF /* LaunchScreen.storyboard */,
+				E9CF724C2BE3C0A700C378DF /* FlashLightVC */,
+				E9CF724D2BE3C0BC00C378DF /* Core */,
 				E9CF72422BE3BFD700C378DF /* Info.plist */,
 			);
 			path = "Light Party";
+			sourceTree = "<group>";
+		};
+		E9CF724C2BE3C0A700C378DF /* FlashLightVC */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF72482BE3C0A000C378DF /* FlashLightViewController.swift */,
+				E9CF72492BE3C0A000C378DF /* FlashLightViewController.xib */,
+			);
+			path = FlashLightVC;
+			sourceTree = "<group>";
+		};
+		E9CF724D2BE3C0BC00C378DF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9CF72342BE3BFD400C378DF /* AppDelegate.swift */,
+				E9CF72362BE3BFD400C378DF /* SceneDelegate.swift */,
+				E9CF723D2BE3BFD700C378DF /* Assets.xcassets */,
+				E9CF723F2BE3BFD700C378DF /* LaunchScreen.storyboard */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,7 @@
 			files = (
 				E9CF72412BE3BFD700C378DF /* LaunchScreen.storyboard in Resources */,
 				E9CF723E2BE3BFD700C378DF /* Assets.xcassets in Resources */,
-				E9CF723C2BE3BFD400C378DF /* Main.storyboard in Resources */,
+				E9CF724B2BE3C0A000C378DF /* FlashLightViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +154,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9CF72392BE3BFD400C378DF /* ViewController.swift in Sources */,
 				E9CF72352BE3BFD400C378DF /* AppDelegate.swift in Sources */,
 				E9CF72372BE3BFD400C378DF /* SceneDelegate.swift in Sources */,
+				E9CF724A2BE3C0A000C378DF /* FlashLightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9CF723A2BE3BFD400C378DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9CF723B2BE3BFD400C378DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9CF723F2BE3BFD700C378DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = "Light Party/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = "Light Party/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
